@@ -1,0 +1,81 @@
+.OrderItem {
+  display: flex;
+  font-size: 0;
+}
+
+.OrderItem-comment-textarea {
+  resize: vertical;
+}
+
+.OrderItem-delete-item {
+  fill: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  .OrderItem {
+    flex-direction: column;
+    padding: 20px 12px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px 1px black;
+  }
+
+  .OrderItem-input {
+    border: 1px solid #cacaca;
+  }
+
+  .OrderItem-name {
+    flex: 0 0 auto;
+  }
+
+  .OrderItem-price {
+    margin-top: 10px;
+    flex: 0 0 auto;
+    width: 100px;
+  }
+
+  .OrderItem-comment {
+    margin-top: 10px;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .OrderItem-delete {
+    margin-top: 10px;
+    flex: 0 0 auto;
+    text-align: right;
+  }
+  .OrderItem-delete-item {
+    fill: #909090;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .OrderItem {
+    align-items: center;
+  }
+  .OrderItem-name {
+    flex: 1 1 auto;
+  }
+
+  .OrderItem-price {
+    margin-left: 10px;
+    flex: 0 0 80px;
+  }
+
+  .OrderItem-comment {
+    margin-left: 10px;
+    flex: 0 0 200px;
+  }
+
+  .OrderItem-delete {
+    flex: 0 0 auto;
+    padding: 5px;
+  }
+
+  .OrderItem-delete-item {
+    fill: white;
+  }
+}
